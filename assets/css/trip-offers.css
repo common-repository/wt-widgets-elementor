@@ -1,0 +1,28 @@
+/** 
+ * Styles for Trip Offers widget
+ * 
+ * @since 1.0.0
+ *
+**/
+.wtwe-trip-offers-wrapper .wp-travel-offer span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wtwe-trip-offers-wrapper .wp-travel-offer{
+    overflow: visible;
+}
+.wtwe-trip-offers-wrapper .wp-travel-offer{
+    position: relative;
+}
+.wtwe-trip-offers-wrapper .wp-travel-offer {
+    position: relative;
+    left: unset;
+    top: unset;
+    
+}
+/* remove triangle shaped object added by wptravel */
+.wtwe-trip-offers-wrapper .wp-travel-offer span:before{
+    content: '';
+    display: none;
+}

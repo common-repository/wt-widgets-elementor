@@ -1,0 +1,72 @@
+/** 
+ * Styles for some global elements
+ * Like errors, success, warnings, infos
+ * 
+ * @since 1.0.0
+ *
+**/
+
+/**
+ * Styles for Base Notice
+**/
+.wtwe-notice-wrap .wtwe-notice {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.wtwe-notice-wrap .wtwe-notice p {
+    display: inline-block;
+    margin: 0;
+}
+
+/**
+ * Styles for Info Notice
+**/
+.wtwe-notice-wrap .wtwe-notice.info {
+    border: 1px solid rgb(229, 205, 238);
+    background-color: rgb(245, 230, 250);
+}
+
+.wtwe-notice-wrap .wtwe-notice.info p {
+    color: rgb(84, 13, 112);
+}
+
+.wtwe-notice-wrap .wtwe-notice.info span.dashicons {
+    color: rgb(84, 13, 112);
+}
+
+/**
+ * Styles for Success Notice
+**/
+.wtwe-notice-wrap .wtwe-notice.success {
+    border: 1px solid rgb(206, 238, 205);
+    background-color: rgb(232, 250, 230);
+}
+
+.wtwe-notice-wrap .wtwe-notice.success p {
+    color: rgb(13, 112, 43);
+}
+
+.wtwe-notice-wrap .wtwe-notice.success span.dashicons {
+    color: rgb(13, 112, 38);
+}
+
+/**
+ * Styles for Error Notice
+**/
+.wtwe-notice-wrap .wtwe-notice.error {
+    border: 1px solid rgb(238, 205, 205);
+    background-color: rgb(250, 230, 230);
+}
+
+.wtwe-notice-wrap .wtwe-notice.error p {
+    color: rgb(112, 13, 13);
+}
+
+.wtwe-notice-wrap .wtwe-notice.error span.dashicons {
+    color: rgb(112, 13, 13);
+}

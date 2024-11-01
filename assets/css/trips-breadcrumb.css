@@ -1,0 +1,20 @@
+.wtwe-breadcrumb-wrapper .trail-browse {
+    display: none;
+}
+.wtwe-breadcrumb-wrapper .trail-items { 
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+}
+.wtwe-breadcrumb-wrapper .trail-begin .separator{ 
+    margin:0px 10px; 
+}
+/* .wtwe-breadcrumb-wrapper .trail-items li{
+   
+} */
+/* .wtwe-breadcrumb-wrapper .trail-item:not(.trail-end)::after {
+    content : attr(data-separator);
+    margin-right: 10px;
+    margin-left: 10px;
+} */

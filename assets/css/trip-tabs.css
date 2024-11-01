@@ -1,0 +1,11 @@
+/** 
+ * Styles for Trip Tabs widget
+ * 
+ * @since 1.0.0
+ *
+**/
+
+#wp-travel-tab-wrapper.wp-travel-tab-wrapper .wp-travel button.slick-arrow {
+    top: 33px;
+}
+

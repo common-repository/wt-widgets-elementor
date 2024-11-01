@@ -1,0 +1,1 @@
+jQuery(window).on("elementor/frontend/init",function(){elementorFrontend.hooks.addAction("frontend/element_ready/wp-travel-hero-slider.default",function(o){o.find("#elementor-control-default-c946").on("change",function(){var e=jQuery(this).prop("checked"),n=o.find(".wtwe-hero-slider-wrapper");e?n.slick("slickPlay"):n.slick("slickPause")})})});

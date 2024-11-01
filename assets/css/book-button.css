@@ -1,0 +1,11 @@
+/** 
+ * Styles for Book Button widget
+ * 
+ * @since 1.0.0
+ *
+**/
+
+#wptravel-blocks-book-button.wtwe-book-trip .wp-block-button .wp-block-button__link.wtwe-book-button {
+    cursor: pointer;
+    transition: 0.25s ease-in-out all;
+}

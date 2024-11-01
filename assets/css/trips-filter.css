@@ -1,0 +1,66 @@
+/* Reset default margins and paddings */
+.wtwe-trips-filter #wptravel-trips-filter-widget {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style form fields and labels */
+.wtwe-trips-filter .wp-travel-form-field {
+    margin-bottom: 20px;
+}
+
+.wtwe-trips-filter .wp-travel-form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.wtwe-trips-filter .wp-travel-form-field input[type="text"],
+.wtwe-trips-filter .wp-travel-form-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Style the submit button */
+.wtwe-trips-filter .wp-travel-search {
+    margin-top: 20px;
+}
+
+.wtwe-trips-filter .wp-travel-filter-search-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wtwe-trips-filter .wp-travel-filter-search-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust the range slider */
+.wtwe-trips-filter .ui-slider {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.wtwe-trips-filter .ui-slider-range {
+    background-color: #007bff;
+}
+
+.wtwe-trips-filter .ui-slider-handle {
+    background-color: #007bff;
+    border: 2px solid #fff;
+}
+
+.wtwe-trips-filter .wp-trave-price-range #amount{
+    border: none;
+}

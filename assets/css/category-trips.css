@@ -1,0 +1,148 @@
+.wtwe-category-trip-wrapper.slick-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wtwe-category-trip-wrapper.slick-slider .slick-prev,
+.wtwe-category-trip-wrapper.slick-slider .slick-next{
+    position: relative;
+}
+
+.wtwe-category-trip-wrapper.slick-slider .slick-prev {
+    left: -60px;
+}
+
+.wtwe-category-trip-wrapper.slick-slider .slick-next {
+    right: -30px;
+}
+
+.wtwe-category-trip-wrapper .slick-list .slick-track {
+    display: flex;
+    gap: 20px;
+}
+
+.wtwe-category-trip-wrapper .wtwe-category-trip {
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    height: 250px;
+    overflow: hidden;
+    transition: ease-in-out .25s box-shadow;
+}
+
+.wtwe-category-trip-wrapper .wtwe-category-trip .wtwe-trip-image-container {
+    height: 100%;
+}
+
+.wtwe-category-trip-wrapper .wtwe-category-trip:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.wtwe-category-trip-wrapper .wtwe-category-trip:hover .wtwe-trip-image-container img {
+    scale: 1.2;
+    filter: blur(2px);
+}
+
+.wtwe-category-trip-wrapper .wtwe-category-trip:hover .wtwe-trip-content {
+    padding-top: 100px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    transition: all ease-in-out 0.25s;
+}
+
+.wtwe-category-trip-wrapper .wtwe-category-trip:hover .wtwe-trip-overlay {
+    opacity: 1;
+    transform: translateY(-110px);
+    transition: all ease-in-out .25s;
+    transition-delay: 100ms;
+}
+
+.wtwe-category-trip-wrapper .wtwe-category-trip .wtwe-trip-image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: ease-in 0.25s all;
+}
+
+.wtwe-category-trip-wrapper .wtwe-category-trip .wtwe-trip-overlay {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transform: translateY(50px);
+    transition: all ease-in-out .25s;
+}
+
+.wtwe-category-trip .wtwe-trip-content {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    bottom: 0;
+    width: 100%;
+    transition: ease-in-out .25s padding;
+}
+
+.wtwe-category-trip .wtwe-trip-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    color: white;
+}
+
+.wtwe-category-trip .wtwe-trip-content .wtwe-trip-info .wtwe-trip-attr {
+    font-size: 13px;
+}
+
+.wtwe-category-trip-wrapper.slick-slider .slick-prev::before, 
+.wtwe-category-trip-wrapper.slick-slider .slick-next::before {
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Font Awesome 5 Free";
+    background-color: #33a02f;
+    opacity: 1;
+    transition: 0.2s ease-in-out background-color;
+}
+.wtwe-category-trip-wrapper.slick-slider .slick-prev::before {
+    content: "←";
+}
+.wtwe-category-trip-wrapper.slick-slider .slick-prev, 
+.wtwe-category-trip-wrapper.slick-slider .slick-next {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: block;
+    transform: translateX(0);
+    transition: .5s all ease-in-out;
+}
+.wtwe-category-trip-wrapper.no-arrow.slick-slider .slick-prev,
+.wtwe-category-trip-wrapper.no-arrow.slick-slider .slick-next {
+    display: none !important;
+}
+/* theme button color issue in slick slider arrow button */
+.wtwe-category-trip-wrapper.slick-slider .slick-arrow::after{
+    display: none !important;
+    background-color: #fff;
+}
+.wtwe-category-trip-wrapper.slick-slider button.slick-arrow{
+    background-color: #fff0 !important;
+    border: solid #fff0 0px !important;
+    font-size: 0 !important;
+    line-height: 0!important;
+    color: transparent !important;
+}
+.wtwe-category-trip-wrapper.slick-slider button.slick-arrow:hover{
+    color: #ff812200 !important;
+}
+.wtwe-category-trip-wrapper.slick-slider button.slick-arrow:focus{
+    box-shadow: unset !important;
+}

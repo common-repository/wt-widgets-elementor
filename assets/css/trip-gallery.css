@@ -1,0 +1,22 @@
+.wtwe-trip-gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    flex: 0 0 23%;
+  }
+
+.wtwe-trip-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .wtwe-trip-gallery-editor-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* This selector removes the unnecessary padding from the trip gallery widget, while ensuring the gallery tab in the trip overview widget remains unaffected. */
+  .wp-travel-advanced-gallery-items-list:not(.wp-travel-tab-wrapper .tab-list-content.resp-tab-content-active .wp-travel-advanced-gallery-items-list){
+    padding: 0;
+}

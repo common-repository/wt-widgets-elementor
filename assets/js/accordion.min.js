@@ -1,0 +1,1 @@
+jQuery(function(e){e(".wtwe-faq-accordion-label").click(function(){e(this).next().slideToggle(200),e(".wtwe-faq-accordion-answer").not(e(this).next()).slideUp(200)})});

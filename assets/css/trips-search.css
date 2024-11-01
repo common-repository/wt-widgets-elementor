@@ -1,0 +1,277 @@
+:root {
+    --text: #9faabd;
+    --border: #9faabd;
+    --borderActive: #189423;
+    --background: #fff;
+    --arrow: #99A3BA;
+    --arrowActive: #6C7486;
+    --listText: #99A3BA;
+    --listBackground: #fff;
+    --listActive: #e5eaf1;
+    --listHover: #F5F9FF;
+    --listTextActive: #6C7486;
+    --listBorder: #E4ECFA;
+    --textFilled: #6C7486;
+}
+.wtwe-trips-search-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.wtwe-trips-search-wrapper .wtwe-select-dropdown {
+  width: 100%;
+  position: relative;
+}
+
+.wtwe-trips-search-wrapper .wtwe-select-dropdown.wtwe-hidden {
+  display: none;
+}
+
+.wtwe-trips-search-wrapper .wtwe-select-dropdown select {
+  display: none;
+}
+
+.wtwe-trips-search-wrapper .wtwe-select-dropdown > .wtwe-select-wrapper {
+  cursor: pointer;
+  padding: 9px 16px;
+  display: block;
+  position: relative;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  background: var(--background);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.wtwe-trips-search-wrapper .wtwe-select-dropdown > .wtwe-select-wrapper::placeholder {
+  color: var(--text);
+}
+
+.wtwe-trips-search-wrapper .wtwe-select-dropdown > .wtwe-select-wrapper i {
+  margin-right: 10px;
+}
+
+.wtwe-trips-search-wrapper .wtwe-trips-search-field {
+  width: 100%;
+  display: flex;
+}
+
+.wtwe-trips-search-wrapper .wtwe-trips-search-field.wtwe-hidden {
+  display: none;
+}
+
+/* .wtwe-trips-search-wrapper .wtwe-trips-search-field .wtwe-trips-search-input {
+  padding: 9px 16px;
+  display: block;
+  position: relative;
+  color: var(--textFilled);
+  font-size: 16px;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background: var(--background);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.wtwe-trips-search-wrapper .wtwe-trips-search-field .wtwe-trips-search-input:focus {
+    border-color: var(--borderActive);
+    outline: none;
+} */
+
+.wtwe-trips-search-field .wtwe-trips-search-input.wtwe-select-dropdown::placeholder {
+    font-size: 16px;
+    color: var(--text);
+}
+.wtwe-trips-search-wrapper .wtwe-select-dropdown > .wtwe-select-wrapper:before, .wtwe-select-dropdown > .wtwe-select-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  border-radius: 1px;
+  top: 50%;
+  right: 15px;
+  background: var(--arrow);
+  transition: all 0.3s ease;
+}
+.wtwe-trips-search-wrapper .wtwe-select-dropdown > .wtwe-select-wrapper::before {
+  margin-right: 4px;
+  transform: scale(0.96, 0.8) rotate(50deg);
+}
+.wtwe-trips-search-wrapper .wtwe-select-dropdown > .wtwe-select-wrapper:after {
+  transform: scale(0.96, 0.8) rotate(-50deg);
+}
+.wtwe-trips-search-wrapper .wtwe-select-dropdown ul {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  max-height: 300px;
+  top: 40px;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--listBackground);
+  transform-origin: 0 0;
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+  transform: scale(0) translate(0, 4px);
+  border: 1px solid var(--listBorder);
+}
+/* .wtwe-trips-search-wrapper .wtwe-select-dropdown .wtwe-select-dropdown-box ul {
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+.wtwe-trips-search-wrapper .wtwe-trips-search-wrapper .wtwe-select-dropdown ul li {
+  opacity: 0;
+  transform: translate(6px, 0);
+  transition: all 0.3s ease;
+}
+.wtwe-trips-search-wrapper .wtwe-select-dropdown ul li a {
+  cursor: pointer;
+  display: block;
+  padding: 10px 16px;
+  color: var(--listText);
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.wtwe-trips-search-wrapper .wtwe-select-dropdown ul li a:hover {
+  color: var(--listTextActive);
+  background: var(--listHover);
+}
+.wtwe-trips-search-wrapper .wtwe-select-dropdown ul li.active a {
+  color: var(--listTextActive);
+  background: var(--listActive);
+}
+.wtwe-trips-search-wrapper     .wtwe-select-dropdown ul li.active a:before, .wtwe-select-dropdown ul li.active a:after {
+  --scale: .6;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  opacity: 0;
+  background: var(--listText);
+  transition: all 0.2s ease;
+}
+.wtwe-select-dropdown ul li.active a:before {
+  transform: rotate(45deg) scale(var(--scale));
+}
+.wtwe-select-dropdown ul li.active a:after {
+  transform: rotate(-45deg) scale(var(--scale));
+}
+.wtwe-select-dropdown ul li.active a:hover:before, .wtwe-select-dropdown ul li.active a:hover:after {
+  --scale: .9;
+  opacity: 1;
+}
+.wtwe-select-dropdown ul li:first-child a {
+  /* border-radius: 6px 6px 0 0; */
+}
+.wtwe-select-dropdown ul li:last-child a {
+  /* border-radius: 0 0 6px 6px; */
+}
+.wtwe-select-dropdown.filled > .wtwe-select-wrapper {
+  color: var(--textFilled);
+}
+.wtwe-select-dropdown.open > .wtwe-select-wrapper {
+  border-color: var(--borderActive);
+}
+.wtwe-select-dropdown.open > .wtwe-select-wrapper::before, .wtwe-select-dropdown.open > .wtwe-select-wrapper::after {
+  background: var(--arrowActive);
+}
+.wtwe-select-dropdown.open > .wtwe-select-wrapper::before {
+  transform: scale(0.96, 0.8) rotate(-50deg);
+}
+.wtwe-select-dropdown.open > .wtwe-select-wrapper::after {
+  transform: scale(0.96, 0.8) rotate(50deg);
+}
+.wtwe-select-dropdown.open ul {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translate(0, 12px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+}
+.wtwe-select-dropdown ul li {
+  opacity: 0;
+  transform: translate(12px, 0);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+}
+.wtwe-select-dropdown.open ul li {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* .wtwe-select-dropdown.open ul li:nth-child(1) {
+  transition-delay: 80ms;
+}
+.wtwe-select-dropdown.open ul li:nth-child(2) {
+  transition-delay: 160ms;
+}
+.wtwe-select-dropdown.open ul li:nth-child(3) {
+  transition-delay: 240ms;
+}
+.wtwe-select-dropdown.open ul li:nth-child(4) {
+  transition-delay: 320ms;
+}
+.wtwe-select-dropdown.open ul li:nth-child(5) {
+  transition-delay: 400ms;
+}
+.wtwe-select-dropdown.open ul li:nth-child(6) {
+  transition-delay: 480ms;
+}
+.wtwe-select-dropdown.open ul li:nth-child(7) {
+  transition-delay: 560ms;
+}
+.wtwe-select-dropdown.open ul li:nth-child(8) {
+  transition-delay: 640ms;
+}
+.wtwe-select-dropdown.open ul li:nth-child(9) {
+  transition-delay: 720ms;
+}
+.wtwe-select-dropdown.open ul li:nth-child(10) {
+  transition-delay: 800ms;
+} */
+
+.wtwe-trips-search-wrapper .wtwe-trips-search-btn.wtwe-hidden{
+  display: none;
+}
+
+.wtwe-trips-search-wrapper .wtwe-trips-search-btn {
+  width: 100%;
+  cursor: pointer;
+  padding: 9px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--background);
+  font-size: 16px;
+  border: 1px solid green;
+  border-radius: 0;
+  background: green;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.wtwe-trips-search-wrapper .wtwe-trips-search-btn:hover {
+    border: 1px solid rgb(31, 168, 31);
+    background: rgb(31, 168, 31);
+    color: var(--background);
+}
+
+@media screen and (max-width: 600px) {
+  .elementor-widget-wp-travel-trip-search-form .wtwe-trips-search-wrapper {
+    flex-wrap: wrap;
+  }
+}

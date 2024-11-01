@@ -1,0 +1,39 @@
+:root {
+    --wtwe-theme : rgb(104, 36, 143);
+    --wtwe-default-bg : green;
+}
+
+.wtwe-faq-accordion .wtwe-faq-accordion-label {
+    background: var(--wtwe-default-bg);
+    color: white;
+    padding: 20px;
+    margin: 0;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+.wtwe-faq-accordion .wtwe-faq-accordion-answer {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display:none;
+}
+.wtwe-faq-accordion .wtwe-faq-accordion-label i{
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.wtwe-faq-accordion .wtwe-faq-accordion-label.open i {
+    transform: rotate(180deg);
+}
+
+.wtwe-faq-accordion .wtwe-error-notice {
+    background-color: #eee;
+    border-left: 3px solid var(--wtwe-theme);
+    padding: 20px;
+    font-size: 13px;
+}
+
+.wtwe-faq-accordion .wtwe-error-notice i {
+    color: var(--wtwe-theme);
+    margin-right: 10px;
+    font-size: 16px;
+}
